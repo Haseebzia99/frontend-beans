@@ -1,12 +1,16 @@
 export default {
     container: {
       display: 'flex',
-      justifyContent: 'space-between'
+      borderBottom: '1px solid grey'
     },
 
     image: {
       height: '10%',
       width: '10%'
     },
+
+    text: {
+      listStyle: 'none'
+    }
   }
   

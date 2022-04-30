@@ -8,8 +8,8 @@ export const Header = (props) => {
     <div style={styles.container}>
       <img src={getImage(data)} style={styles.image} />
       <div style={styles.text}>
-        <h5>{getUsername(data)}</h5>
-        <h5>{getLocation(data)}</h5>
+        <li>{getUsername(data)}</li>
+        <li>{getLocation(data)}</li>
       </div>
     </div>
   )

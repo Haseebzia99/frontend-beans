@@ -24,7 +24,8 @@ export default {
 
   text: {
     order: '2',
-    flex: '1 0 40%',
-    alignSelf: 'flex-start'
+    flex: '1 0 30%',
+    // alignSelf: 'flex-start',
+    padding: '30px 30px 0px 30px'
   }
 }
