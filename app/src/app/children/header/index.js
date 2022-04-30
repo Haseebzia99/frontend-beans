@@ -1,14 +1,14 @@
 import React from 'react'
-import { getLocation, getUsername, getImage} from './helpers'
+import { getLocation, getUsername, getImage } from './helpers'
 import styles from './styles'
 
 export const Header = (props) => {
-  const {data} = props
+  const { data } = props
   return (
     <div style={styles.container}>
       <img src={getImage(data)} style={styles.image} />
       <div style={styles.text}>
-        <li>{getUsername(data)}</li>
+        <li><strong>{getUsername(data)}</strong></li>
         <li>{getLocation(data)}</li>
       </div>
     </div>

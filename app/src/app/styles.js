@@ -26,6 +26,6 @@ export default {
     order: '2',
     flex: '1 0 30%',
     // alignSelf: 'flex-start',
-    padding: '30px 30px 0px 30px'
+    padding: '10px 30px 0px 30px'
   }
 }

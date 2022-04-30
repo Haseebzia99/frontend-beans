@@ -1,16 +1,14 @@
 import React from 'react'
 import styles from './styles'
 import { Button } from './button'
-import { getLikes } from './helpers'
-
 
 export const Footer = (props) => {
-  const {data} = props
+  const { data } = props
   return (
-    <div>
+    <div style={styles.container}>
       <div>
-        <h1>{getLikes(data)} likes</h1>
-        4 days agp
+        <li><strong>6,244 likes</strong></li>
+        <li>4 days ago</li>
       </div>
       <Button />
     </div>

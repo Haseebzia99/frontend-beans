@@ -3,6 +3,7 @@ export default {
     width: '100%',
     display: 'block',
     height: '100%',
+    listStyle: 'none'
   },
 
   scroll: {
@@ -11,4 +12,3 @@ export default {
     height: '300px'
   }
 }
-  

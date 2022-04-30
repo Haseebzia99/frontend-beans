@@ -15,7 +15,7 @@ const App = (props) => {
       <div style={styles.text}>
         <Header data={data} />
         <Comments data={data} />
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </main>
   )
