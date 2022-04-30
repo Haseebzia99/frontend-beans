@@ -1,7 +1,9 @@
 import React from 'react'
 import Image from './children/image'
-import LikeButton from './children/like_button'
 import styles from './styles'
+import { Comments } from './children/comments'
+import { Header } from './children/header'
+import { Footer } from './children/footer'
 
 const App = (props) => {
   const { data } = props
@@ -11,9 +13,9 @@ const App = (props) => {
         <Image data={data} />
       </div>
       <div style={styles.text}>
-        <p>User block</p>
-        <p>Comments block</p>
-        <LikeButton />
+        <Header data={data} />
+        <Comments data={data} />
+        <Footer />
       </div>
     </main>
   )
