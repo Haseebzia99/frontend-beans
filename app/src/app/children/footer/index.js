@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
-import LikedIcon from '../footer/button/children/liked_icon'
-import UnlikedIcon from '../footer/button/children/unliked_icon'
+import { LikedIcon } from '../footer/button/children/liked_icon';
+import { UnLikedIcon } from './button/children/unLiked_icon';
 
-import styles from './styles'
+import styles from './styles';
 
 export const Footer = () => {
   const [isClicked, setIsClicked] = useState(false)
@@ -21,11 +21,11 @@ export const Footer = () => {
   return (
     <div style={styles.container}>
       <div>
-        <li style={styles.likes}>{count} likes</li>
-        <li style={styles.days}>4 days ago</li>
+        <li key="likes" style={styles.likes}>{count} likes</li>
+        <li key="days" style={styles.days}>4 days ago</li>
       </div>
       <button style={styles.button} onClick={iconHandler}>
-        {isClicked ? <LikedIcon aria-label='like' /> : <UnlikedIcon aria-label='Un-like' />}
+        {isClicked ? <LikedIcon /> : <UnLikedIcon />}
       </button>
     </div>
   )

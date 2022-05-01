@@ -1,7 +1,9 @@
-import React from 'react'
-import styles from './styles'
-import { getCaptionFromEdges } from './helpers'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
+
+import { getCaptionFromEdges } from './helpers';
+
+import styles from './styles';
 
 export const Image = (props) => {
   const { data } = props

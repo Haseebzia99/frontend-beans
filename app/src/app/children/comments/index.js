@@ -1,10 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import { getCaptionFromEdges } from '../image/helpers'
+import { getCaptionFromEdges } from '../image/helpers';
 
-import { getUser, getProfileUser } from './helpers'
-import styles from './styles'
+import { getUser, getProfileUser } from './helpers';
+import styles from './styles';
 
 export const Comments = (props) => {
   const { data } = props
@@ -12,7 +12,7 @@ export const Comments = (props) => {
   return (
     <div style={styles.container}>
       <div style={styles.scroll}>
-        <li style={styles.userComment}>
+        <li key={data.owner.id} style={styles.userComment}>
           <strong style={styles.userName}>{getProfileUser(data)}</strong>
           {getCaptionFromEdges(data.edge_media_to_caption)}
         </li>
