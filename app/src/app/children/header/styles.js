@@ -1,4 +1,4 @@
-export default {
+const styles = {
   container: {
     display: 'flex',
     borderBottom: '1px solid rgba(237, 233, 232)',
@@ -20,3 +20,5 @@ export default {
     fontSize: '13px'
   }
 }
+
+export default styles;

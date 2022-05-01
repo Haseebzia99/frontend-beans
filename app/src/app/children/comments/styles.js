@@ -1,4 +1,4 @@
-export default {
+const styles = {
   container: {
     listStyle: 'none',
     fontSize: '15px'
@@ -24,3 +24,5 @@ export default {
     padding: '0'
   }
 }
+
+export default styles;

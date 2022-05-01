@@ -1,4 +1,4 @@
-export default {
+const styles = {
   container: {
     display: 'flex',
     justifyContent: 'space-between',
@@ -23,3 +23,5 @@ export default {
     fontSize: '9px'
   }
 }
+
+export default styles;
