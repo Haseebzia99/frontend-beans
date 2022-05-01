@@ -3,8 +3,8 @@ import styles from './styles'
 export const getUser = (data) => {
   return data.edges.map(user => {
     return (
-      <ul style={styles.comments}>
-        <li><strong>{user.node.owner.username}</strong>{user.node.text}</li>
+      <ul key='{data}' style={styles.comments}>
+        <li><strong style={styles.userName}>{user.node.owner.username}</strong>{user.node.text}</li>
       </ul>
     )
   })

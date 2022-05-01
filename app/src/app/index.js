@@ -1,9 +1,11 @@
 import React from 'react'
+
 import { Image } from './children/image'
-import styles from './styles'
 import { Comments } from './children/comments'
 import { Header } from './children/header'
 import { Footer } from './children/footer'
+
+import styles from './styles'
 
 const App = (props) => {
   const { data } = props

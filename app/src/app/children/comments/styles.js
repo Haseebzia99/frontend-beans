@@ -1,21 +1,26 @@
 export default {
   container: {
-    width: '100%',
-    display: 'block',
-    height: '100%',
-    listStyle: 'none'
+    listStyle: 'none',
+    fontSize: '15px'
   },
 
   scroll: {
     overflow: 'scroll',
     margin: '0',
-    height: '300px'
+    height: '380px'
+  },
+
+  userComment: {
+    margin: '8px 0 8px 0'
+  },
+
+  userName: {
+    marginRight: '5px'
   },
 
   comments: {
-    listStyle: 'none',
     display: 'inline-flex',
-    margin: '0',
+    margin: '0 0 5px 0',
     padding: '0'
   }
 }

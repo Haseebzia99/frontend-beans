@@ -7,14 +7,14 @@ import styles from './styles'
 
 export const Footer = () => {
   const [isClicked, setIsClicked] = useState(false)
-  const [count, setCount] = useState(6244);
+  const [count, setCount] = useState(6244)
 
   const iconHandler = () => {
     setIsClicked((isClicked) => !isClicked)
     setCount(count + 1)
 
     if (isClicked) {
-      setCount(count - 1);
+      setCount(count - 1)
     }
   }
 
@@ -25,7 +25,7 @@ export const Footer = () => {
         <li style={styles.days}>4 days ago</li>
       </div>
       <button style={styles.button} onClick={iconHandler}>
-        { isClicked ? <LikedIcon /> : <UnlikedIcon/> }
+        {isClicked ? <LikedIcon aria-label='like' /> : <UnlikedIcon aria-label='Un-like' />}
       </button>
     </div>
   )
