@@ -1,9 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './styles'
 import { Button } from './button'
 
 export const Footer = (props) => {
-  const { data } = props
   return (
     <div style={styles.container}>
       <div>

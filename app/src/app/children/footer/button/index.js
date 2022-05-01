@@ -1,13 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import LikedIcon from './children/liked_icon'
 import UnlikedIcon from './children/liked_icon'
 
-export const Button = () => {
-  const [click, setClick] = useState(false)
-
+export const Button = (onClick) => {
   return (
-    <button onClick={!setClick}>
-      {click ? <LikedIcon /> : <UnlikedIcon />}
-    </button>
+    <button onClick={onClick} />
   )
 }
