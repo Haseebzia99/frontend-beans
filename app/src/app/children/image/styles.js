@@ -1,4 +1,5 @@
 export default {
   width: '100%',
-  display: 'block'
+  display: 'block',
+  height: '100%'
 }

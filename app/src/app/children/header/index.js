@@ -1,6 +1,7 @@
 import React from 'react'
 import { getLocation, getUsername, getImage } from './helpers'
 import styles from './styles'
+import PropTypes from 'prop-types';
 
 export const Header = (props) => {
   const { data } = props
@@ -13,4 +14,8 @@ export const Header = (props) => {
       </div>
     </div>
   )
+}
+
+Header.propTypes = {
+  props: PropTypes.string
 }

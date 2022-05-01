@@ -1,8 +1,9 @@
 import React from 'react'
 import styles from './styles'
 import { getCaptionFromEdges } from './helpers'
+import PropTypes from 'prop-types';
 
-const Image = (props) => {
+export const Image = (props) => {
   const { data } = props
   return (
     <img
@@ -13,4 +14,6 @@ const Image = (props) => {
   )
 }
 
-export default Image
+Image.propTypes = {
+  props: PropTypes.string
+}

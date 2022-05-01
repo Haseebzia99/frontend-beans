@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from './children/image'
+import { Image } from './children/image'
 import styles from './styles'
 import { Comments } from './children/comments'
 import { Header } from './children/header'
