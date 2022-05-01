@@ -10,7 +10,7 @@ export const Comments = (props) => {
   const { data } = props
 
   return (
-    <div style={styles.container}>
+    <div data-testid="comments" style={styles.container}>
       <div style={styles.scroll}>
         <li key={data.owner.id} style={styles.userComment}>
           <strong style={styles.userName}>{getProfileUser(data)}</strong>

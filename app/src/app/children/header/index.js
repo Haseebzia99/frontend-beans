@@ -8,7 +8,7 @@ import styles from './styles';
 export const Header = (props) => {
   const { data } = props
   return (
-    <div style={styles.container}>
+    <div data-testid="header" style={styles.container}>
       <img src={getImage(data)} style={styles.image} alt={getUsername(data)} />
       <div style={styles.text}>
         <li key={data.owner.id}><strong>{getUsername(data)}</strong></li>

@@ -19,7 +19,7 @@ export const Footer = () => {
   }
 
   return (
-    <div style={styles.container}>
+    <div data-testid="footer" style={styles.container}>
       <div>
         <li key="likes" style={styles.likes}>{count} likes</li>
         <li key="days" style={styles.days}>4 days ago</li>
