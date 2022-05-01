@@ -2,7 +2,7 @@ import React from 'react'
 import { getUser, getProfileUser } from './helpers'
 import { getCaptionFromEdges } from '../image/helpers'
 import styles from './styles'
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 
 export const Comments = (props) => {
   const { data } = props
@@ -17,5 +17,5 @@ export const Comments = (props) => {
 }
 
 Comments.propTypes = {
-  props: PropTypes.string,
-};
+  props: PropTypes.string
+}

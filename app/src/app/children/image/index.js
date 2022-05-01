@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './styles'
 import { getCaptionFromEdges } from './helpers'
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 
 export const Image = (props) => {
   const { data } = props
